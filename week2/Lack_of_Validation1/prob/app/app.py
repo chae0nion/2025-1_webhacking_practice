@@ -17,9 +17,12 @@ def index():
 
     if not html:
         html = ''
+
+    if re.search(r"(<script|<.*on.*>)", html, flags=re.IGNORECASE):
+        return "No Hack ~_~"
     
     return f"""
-    <h1>simple XSS</h1>
+    <h1>Lack of Validation</h1>
     {html}
     <br><br><br>
     If you find error, report the URL 

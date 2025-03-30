@@ -1,6 +1,6 @@
 services:
-  simple_xss:
+  lack_of_validation1:
     build:
       dockerfile: ./Dockerfile
     ports:
-      - "30030:5000"
+      - "30031:5000"

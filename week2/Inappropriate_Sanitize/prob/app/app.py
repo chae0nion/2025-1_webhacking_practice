@@ -17,9 +17,13 @@ def index():
 
     if not html:
         html = ''
+
+    # Sanitize
+    html = re.sub(r"(<.*on.*>|<.*frame.*>|<.*embed.*>|<.*object.*>)", "", html, flags=re.I)
+    html = re.sub(r"script", "", html, flags=re.I)
     
     return f"""
-    <h1>simple XSS</h1>
+    <h1>Lack of Validation</h1>
     {html}
     <br><br><br>
     If you find error, report the URL 

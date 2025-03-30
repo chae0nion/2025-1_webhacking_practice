@@ -1,6 +1,6 @@
 services:
-  simple_xss:
+  inappropriate_sanitize:
     build:
       dockerfile: ./Dockerfile
     ports:
-      - "30030:5000"
+      - "30032:5000"
