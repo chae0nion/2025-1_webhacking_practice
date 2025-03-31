@@ -1,0 +1,6 @@
+services:
+  safe_renderer:
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - "30034:5000"

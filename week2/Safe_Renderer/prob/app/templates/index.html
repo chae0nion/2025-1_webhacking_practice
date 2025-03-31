@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe_Renderer</title>
+</head>
+<body>
+    <h1>Safe Renderer</h1>
+
+    <p>
+        render some text and image
+    </p>
+
+    <h3>render text</h3>
+    <form action="/text">
+        text: <input type="text" name="text" placeholder="input text here">
+        <input type="submit" value="submit">
+    </form>
+
+    <h3>render image</h3>
+    <form action="/image">
+        url: <input type="text" name="url" placeholder="http://www.image.com/image">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
